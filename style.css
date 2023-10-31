@@ -1,0 +1,59 @@
+
+
+body{background:#F8E5E5;color:black;
+     
+}
+
+header{color:#FA255E ;
+    text-decoration :black;
+    font-family :Georgia, 'Times New Roman', Times, serif;
+    font-style:normal;
+    font-weight: bold;
+    text-decoration-line: none;
+    font-size:20px;
+       border-top:#F8E5E5;
+       border-bottom :#F8E5E5;
+       border-left-style:hidden;
+       border-width:5px;;
+       border-left-color: black ;
+}
+
+h1{color:hwb(0 7% 93%);
+    font-size:15px;
+    font-style:normal;
+}
+
+h2{color:hwb(0 7% 93%);
+    font-size:15px;
+    font-style:normal;
+}
+h3{             color:black;
+    font-size:15px;
+    font-style:normal;
+}
+h4{ color:#FA255E;
+    font-size:15px;
+    font-style:normal;
+}
+p{ background:#F8E5E5;
+    color :black;
+    text-decoration :black;
+    font-family :Georgia, 'Times New Roman', Times, serif;
+    font-style:italic;
+    font-weight: bold;
+    text-decoration-color: #C39EA0;
+    font-size: 15px;
+       border-style: outset;
+       border-color:#C39EA0;
+       border-width: 15px;
+       border-radius: 15px;
+       padding: 5px;
+    
+}
+.odd{
+    color:rgb(17, 134, 143)
+    
+}    
+.even{
+    color:rgb(255, 0, 170)
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title> Contact </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <header>
+
+    <body>
+        <h1> Contact Me Here</h1>
+
+          <form action="MySQL data insertion sample.php" method="post">
+             <Label for ="firstname">First Name : </Label>
+               <input type="text" id ="firstname" name="firstname"> <br>
+
+              <label for = "lastname">Last Name :</label> 
+               <input type="text" id ="lastname" name="lastname"><br>
+
+              <label for ="email"> Email :</label> 
+              <input type="email" id = "email" name="email"><br>
+
+              <label for ="telno">Tel no.:</label>           
+              <input type="tel" id ="telno" name="telno"><br>
+              
+              <label for ="password">Password  :</label>
+              <input type="password" id ="password" name="password"><br>
+           
+              <label for ="description">Briefly describe yourself</label>
+              <textarea id = "description" name="description"></textarea><br>
+
+              <label for="Status"> Community Status</label>
+               <select id ="Status" name="Status">
+                  <option value="1">Minor</option>
+                  <option value="2">Adult</option>
+                  <option value="3">Elderly</option>
+               </select><br><br><br>
+
+             <fieldset>
+
+                <legend>Education_level</legend>
+              <label>
+                <input type="radio" name ="level" value="1">
+                PhD holder 
+              </label><br>
+                <label>
+                <input type="radio" name="level" value="2">
+                Masters degree
+              </label><br>
+               <label>
+                <input type="radio" name="level" value="3">
+               First degree
+              </label><br>
+               <label>
+                <input type="radio" name="level" value="4">
+               O level
+              </label><br>
+               <label>
+                <input type="radio" name="level" value="4" checked>
+               Primary level
+              </label><br>
+
+            </fieldset><br>
+             
+             <label>
+                <input type="checkbox" name="terms">
+                I agree to the set Terms and Conditions 
+             </label><br><br>
+
+              <button>Submit</button>
+              
+          </form>
+    </body>
+</html>

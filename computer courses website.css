@@ -1,0 +1,191 @@
+/* Basic styles, you can customize further */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   backdrop-filter:inherit;
+   background-color: transparent;
+   padding: 15px 0;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+nav.col-1{
+    flex-basis: 45%;
+}
+nav.col-2{
+    flex-basis: 55%;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    margin : 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+    margin : 0;
+    background: -moz-linear-gradient(34);
+}
+
+nav ul li {
+    display: inline-block;
+    color: beige;
+    margin :3px 15px;
+    letter-spacing: 0pc;
+   
+}
+nav ul li a{
+    color: rgb(250, 8, 149);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #007bff;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 1.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul.sign-up{
+    background-color: antiquewhite;
+    color: black;
+    font-size: 18px;
+    border: solid #ffb000;
+    border-radius: 10px;
+    padding: 6px;
+    text-decoration: none;
+    width: fit-content;
+    color: #d80032;
+    transition: background 0.5s;
+}
+nav ul.sign-up :hover{
+   background: #007bff;
+}
+nav ul.log-in{
+    border:solid #74776f;
+    color: black;
+    border-radius: 6px;
+    text-decoration: none;
+    width: fit-content;
+    padding: 5px;
+    font-size: 18px;
+    background-color: aliceblue;
+    transition:0.5s;
+}
+nav ul.log_in :hover{
+    background: #007bff;
+}
+
+.hero {
+    background-image: url("images/bg5.jpg");
+    background-size: cover;
+    filter:saturate(300%) ;
+    text-align: center;
+    padding: 100px 0;
+    color: #007bff;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.course-page {
+    background-color: #451952;
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+    margin: 0%;
+    
+}
+#programming{
+   border:#e55604;
+   background-color: #8ecddd;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   float: inline-end;
+}
+#programming.h2{
+    color: #12cc47;
+}
+#programming.p{
+    color:#016a70;
+}
+#web-development{
+    border:#e55604;
+   background-color: #d80032;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   float: inline-end;
+}
+#web-development.h2{
+    color: #12cc47;
+}
+#web-development.p{
+    color:#016a70;
+}
+#data-science{
+   border:#e55604;
+   background: color #713abe;;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   float: inline-end;
+}
+#data-science.h2{
+    color:#ffb000;
+}
+#data-science.p{
+    color:#016a70;
+}
+
+.social-links {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-links a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #007bff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

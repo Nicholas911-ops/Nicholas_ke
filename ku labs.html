@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="IE = cutting-edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>SCC computer lab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="ku labs.css">
+   
+</head>
+<body>
+
+  <header>
+    <nav class="navbar bg-body-tertiary fixed-top ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./images/ku logo.jpg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span><img src="logo.jpg" alt=""></span>Dashboard</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://ict.ku.ac.ke/ict-departments/">ICT department</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="https://ict.ku.ac.ke/downloads/">Student Guide Materials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://support.ku.ac.ke/knowledgebase.php?category=6">Smartcard guide</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://ict.ku.ac.ke/students-computer-laboratories/">Students computer labs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://ict.ku.ac.ke/contact-us/">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://ict.ku.ac.ke/about-us/">About us</a>
+                </li><br>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="head ">
+    <div class="container">
+      <div class="row">
+        <div class=" col-lg-2 col-md-6 col-sm-12 text-center mb-2"> <!-- Use col-md-6 for medium and col-sm-12 for small screens -->
+          <button id="home" class="btn btn-success btn-block">Home</button>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-sm-12 text-center mb-2"> <!-- Use col-md-6 for medium and col-sm-12 for small screens -->
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="#">Service charter</a></li>
+              <li><a class="dropdown-item" href="#">Work Schedules</a></li>
+              <li><a class="dropdown-item" href="#">Service packages</a></li>
+              <li><a class="dropdown-item" href="#">Pricing information</a></li>
+              <li><a class="dropdown-item" href="#">Service description</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Exit</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class=" col-lg-2 col-md-6 col-sm-12 text-center mb-2"> <!-- Use col-md-6 for medium and col-sm-12 for small screens -->
+          <button id="computer_labs"  class="pageButton btn btn-success btn-block" >Computer labs</button>
+        </div>
+
+        <div class=" col-lg-2 col-md-6 col-sm-12 text-center mb-2"> <!-- Use col-md-6 for medium and col-sm-12 for small screens -->
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Notices
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item active" href="#">Important announcements.</a></li>
+              <li><a class="dropdown-item" href="#">News / updates </a></li>
+              <li><a class="dropdown-item" href="#">Event notifications</a></li>
+              <li><a class="dropdown-item" href="#">Alerts or warnings.</a></li>
+              <li><a class="dropdown-item" href="#">Blog posts or News articles</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Exit</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class=" col-lg-2 col-md-6 col-sm-12 text-center mb-2"> <!-- Use col-md-6 for medium and col-sm-12 for small screens -->
+          <button id="gallery" class="btn btn-success btn-block">Our gallery</button>
+        </div>
+
+        <div class=" col-lg-2 col-md-6 col-sm-12 text-center mb-2"> <!-- Use col-md-6 for medium and col-sm-12 for small screens -->
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About us
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-center">
+              <li><a class="dropdown-item active" href="#">Our mission and vision</a></li>
+              <li><a class="dropdown-item" href="#">Our team</a></li>
+              <li><a class="dropdown-item" href="#">Awards and Recognitions</a></li>
+              <li><a class="dropdown-item" href="#">Contact us</a></li>
+              <li><a class="dropdown-item" href="#">Our history</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Exit</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<div class="content-display-container">
+
+  <!-----home content button-->
+
+     <div id="Home" class="Home">
+     <div class="intro">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 mt-md-7" class="text-center">
+            <h1>SCC Computer Lab</h1>
+             <h2>Welcome to the SCC Computer Lab, where technology meets learning </h2>
+            <p >Welcome to SCC computer lab, the technological oasis where students embark on an electrifying journey through the digital realm. <br>Nestled within our cutting-edge computer lab, we offer an unrivaled opportunity for students to harness the power of various computer packages, unlocking their potential for limitless creativity and innovation. But that's not all - at SCC , we're not just about learning; we're about propelling careers to soaring heights. Dive into our world of possibilities, apply for prestigious attachments, and let your dreams take flight. Elevate your expertise with our advanced IT courses, where the art of web design, the intricacies of database management, and the magic of data science come together to shape the future.SCC computer lab is where your journey to digital mastery begins, and the possibilities are as boundless as your imagination. Join us, and together, we'll explore the uncharted territories of the digital universe.</p>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+    
+    <div class="mission">
+      <div class="container mt-1 text-center">
+              <!-- Bootstrap card with animated borders -->
+              <div class="card border animated-border">
+                  <div class="card-body">
+                      <h2 class="card-title">Mission</h2>
+                      <p>"Empowering Innovation, Fostering Excellence: KU SCC Lab - Where Dreams Transform into Digital Realities."</p>
+                  </div>
+              </div>
+          </div>
+      
+      </div><br><br>
+      
+    <div class="courses">
+      <div class="container-fluid mb-3 mt-3 text-center">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-md-5">
+              <h2>Web Development</h2>
+            <p>Web development combines design and coding to create engaging, functional websites and web applications. It bridges creativity and technology, enabling businesses to connect with their audience online effectively.</p></div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-md-5">
+            <h2>Software Development</h2>
+            <p>Software development encompasses the entire lifecycle of building software applications, from concept to maintenance. It involves coding, testing, and deployment, ensuring that programs meet user needs and function reliably.</p></div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-md-5">
+             <h2>Data Analytics</h2>
+            <p>Data analytics extracts valuable insights from vast datasets, aiding informed decision-making. Techniques like data mining and statistical analysis uncover patterns, trends, and opportunities, empowering businesses to optimize their strategies.</p></div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-md-5">
+            <h2>Cybersecurity</h2>
+            <p>Cybersecurity ensures digital safety, protecting against threats. Web development crafts engaging online experiences. Software development creates applications. Data analytics extracts insights. Database management organizes and secures valuable information.</p></div>
+       
+          <div class="col-lg-4 col-md-6 col-sm-12 mt-md-5">
+             <h2>Database Management</h2>
+            <p>Database management involves organizing, securing, and optimizing data storage. It ensures data availability and integrity, supporting efficient retrieval and analysis. Effective management is fundamental for data-driven organizations.</p></div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-md-5">
+             <h2>General Overview</h2>
+            <p>Cybersecurity ensures digital safety, protecting against threats. Web development crafts engaging online experiences. Software development creates applications. Data analytics extracts insights. Database management organizes and secures valuable information.</p></div>
+
+        </div><br>
+      </div>
+    </div><br>
+
+    <div class="scc">
+      <div class="container-fluid mb-3 mt-3">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-sm-12 mt-md-5">
+            <div class="p-2">
+             <img src="./images/scc.jpg "  class="d-block w-100" style=" height: 500px; width: 400px;" alt="">
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-sm-12 col-md-12 mt-md-5 ">
+          <div class="p-2">
+            <h1>ICT SERVICES</h1><br>
+              <p>The following are some services offered to students through the ict platforms</p><br>
+                <nav>
+                  <ul>
+                    <li>Student Portal creation and reset -Room 324</li>
+                    <li>How to submit a ICT support ticket</li>
+                    <li>Corporate email and password creation - Room 324 </li>
+                    <li>Eduroum WIFI and network issues - Room 328</li>
+                    <li>Issues with Units, GPA and Portal menu- Room 327</li>
+                  </ul>
+                </nav><br>
+               <p>Students can readily acess the ICT support guide online ,<br> submit their ticket request for assistance using the link below.
+                  <br>They can also find other services like tracking their past tickets ,<br> access other ICT services offered by the school to students </p>
+                  <button class="btn"><a href="https://support.ku.ac.ke/index.php?a=add">Ku Ict Support</a></button>
+              </div>
+            </div>
+          
+            <div class="col-lg-4 col-md-12 col-sm-12 mt-md-5">
+              <div class="p-2">
+              <img src="./images/ict.jpg"  class="d-block w-100" style=" height: 500px; width: 400px;" alt="" >
+            </div>
+          </div>
+      
+    </div>
+  </div>
+</div>
+       
+<div class="ticket">
+   <div class="container-fluid mb-3 mt-3">
+    <div class="p-3">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-md-2 ">
+          <div class="p-1">
+           <img src="./images/about.jpg" class="d-block w-100" style=" height: 400px; width: 600px;"alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 mt-md-2 ">
+          <div class="p-1">
+            <h1>Steps to Submit a ICT Support Ticket</h1><br>
+            <nav>
+              <ul>
+                <li> Open your Browser i.e (chrome, google, mozilla)</li><br>
+                <li> Type or click the URL below in the addressc bar</li><br>
+                <li> <a href=" https://support.ku.ac.ke/">htttps://support.ku.ac.ke</a></li><br>
+                <li> Scroll down to ICT services , Click on the drop down menu</li><br>
+                <li> Select a service</li><br>
+                <li> Fill in the online form</li><br>
+                <li> Get  tracking id number and submit the ticket</li><br>
+                
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      </div>
+   </div>
+</div>
+ 
+<div class="services">
+  <div class="container-fluid mb-3 mt-3">
+   <div class="p-3">
+     <div class="row">
+
+       <div class="col-lg-6 col-md-12 col-sm-12 mt-md-2 ">
+         <div class="p-1">
+          <h1>KU ICT SERVICES</h1><br>
+          <h2>Roles of the Ict Department </h2><br>
+           <div>
+             <ul>
+              <li>Managing ICT help desk</li><br>
+              <li>Administration of University Corporate Email</li><br>
+              <li>Facilitation of meetings, functions and paperless presentations</li><br>
+              <li>Printer installation, configuration and sharing</li><br>
+              <li>Software Distribution/Upgrade and Installation</li><br>
+              <li>Administration of University Anti-Virus</li><br>
+              <li>Administration of University Anti-Virus</li><br>
+             </ul>
+           </div>
+         </div>
+       </div>
+         
+       <div class="col-lg-6 col-md-12 col-sm-12 mt-md-2 ">
+        <div class="p-1">
+         <img src="./images/professional.jpg"  class="d-block w-100" alt="">
+        </div>
+      </div>
+
+     </div>
+    </div>
+  </div>
+</div>
+
+<div class="policies">
+  <div class="container-fluid mb-3 mt-3">
+   <div class="p-3">
+     <div class="row">
+       <div class="col-lg-6 col-md-12 col-sm-12 mt-md-2 ">
+         <div class="p-1">
+          <img src="./images/expert it.jpg"  class="d-block w-100" alt="">
+         </div>
+       </div>
+
+       <div class="col-lg-6 col-md-12 col-sm-12 mt-md-2 ">
+         <div class="p-1">
+          <h1>Our ICT policies Guide</h1><br>
+          <p>Kenyatta University's ICT policies are the cornerstone of its digital ecosystem, meticulously designed to ensure a secure, inclusive, and innovative environment.<br>
+           These policies encompass data privacy, network security, equitable access, and technological advancements, reflecting a commitment to fostering a cutting-edge ICT landscape for both students and faculty.
+           I strongly recommend all online users to take a moment and review Kenyatta University's ICT policies to ensure a safe and informed digital experience. Accessible here:
+          </p><br>
+          <a href="https://support.ku.ac.ke/knowledgebase.php?category=8">Kenyatta university ICT guide</a><br>
+
+         </div>
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+<div class="professional">
+  <div class="container-fluid mb-3 mt-3">
+   <div class="p-3">
+     <div class="row">
+
+       <div class="col-lg-6 col-md-12 col-sm-12 mt-md-2 ">
+         <div class="p-1">
+          <h1>Overview of Kenyatta University  online professional courses</h1><br>
+          <p>KU ICT PROFESSIONAL TRAINING AND CERTIFICATION CENTER (IPTCC) sets to deliver ICT training so as to help improve career and educational opportunities for individuals in our community by targeting those who want to enhance their ICT skills at different levels.<br> The courses have been tailored to cater for individuals who have different levels of education starting from Primary School level to University level.<br> Our Center is part of the  global education initiative and it has partnered with the following Academies to train and do certifications on various ICT courses: </p><br>
+            <nav>
+              <ul>
+                <li>Cisco Networking Academy</li>
+                <li>IBM Skills Academy</li>
+                <li>ICDL center</li>
+                <li>Huawei ICT Academy</li>
+                <li>Kodris Coding Program</li>
+              </ul>
+            </nav><br>
+            <p>For detailed information and further clarifications visit the link below: </p><br>
+            <a href="https://iptcc.ku.ac.ke/">ICT PROFESSIONAL TRAINING AND CERTIFICATION CENTER (IPTCC)</a>
+         </div>
+       </div>
+
+       <div class="col-lg-6 col-md-12 col-sm-12 mt-md-2">
+        <div class="p-1">
+         <img src="./images/complab.jpg"  class="d-block w-100" style=" height: 500px; width: 630px;"alt="">
+        </div>
+      </div>
+     </div>
+    </div>
+  </div>
+</div>
+
+<div class="carousels">
+  <div class="container-fluid mb-3 pt-3 text-center">
+     <div class="row">
+
+      <!----------alternative caoursel display
+      <div class="carousels">
+        <div class="container-fluid mb-3 pt-3 text-center">
+          <div class="row">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+               Custom carousel indicators 
+              <ol id="custom-carousel-indicators" class="carousel-indicators">
+                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="3"></li>
+                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="4"></li>
+                <li data-bs-target="#carouselExampleDark" data-bs-slide-to="5"></li>
+              </ol>
+      
+              <div class="carousel-inner">
+                <div class="col-md-12">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <img src="./images/tech.jpg" class="d-block w-100" style="height: 400px; width: 100%;" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+              </div>
+                Add other carousel items here 
+                <div class="col-md-12">
+                  <div class="carousel-item" >
+                    <img src="./images/techevolve.jpg" class="d-block w-100" style="height:400px; width:100px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-md-12">
+                  <div class="carousel-item " >
+                    <img src="./images/iot.jpg" class="d-block w-100" style="height:400px; width:100px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-12">
+                  <div class="carousel-item " >
+                    <img src="./images/user dir.jpg" class="d-block w-100" style="height:400px; width:100px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Fourth slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-md-12">
+                  <div class="carousel-item " >
+                    <img src="./images/ict.jpg" class="d-block w-100" style="height:400px; width:100px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Fifth slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-md-12">
+                  <div class="carousel-item ">
+                    <img src="./images/training.jpg" class="d-block w-100" style="height:400px; width:100px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Sixth slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+               Previous and Next buttons 
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    -->
+
+
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="col-md-12">
+          <div class="carousel-item active" >
+            <img src="./images/tech.jpg " class="d-block w-100" style="height:400px; width:100px;"  alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-12">
+          <div class="carousel-item" >
+            <img src="./images/techevolve.jpg" class="d-block w-100"style="max-height: 300px; width: auto;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-12">
+          <div class="carousel-item " >
+            <img src="./images/iot.jpg" class="d-block w-100" style="max-height: 300px; width: auto;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          </div>
+          <div class="col-md-12">
+          <div class="carousel-item " >
+            <img src="./images/user dir.jpg" class="d-block w-100" style="max-height: 300px; width: auto;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fourth slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-12">
+          <div class="carousel-item " >
+            <img src="./images/ict.jpg" class="d-block w-100" style="max-height: 300px; width: auto;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fifth slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-12">
+          <div class="carousel-item ">
+            <img src="./images/training.jpg" class="d-block w-100" style="max-height: 300px; width: auto;" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sixth slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+     </div>
+  </div>
+</div>
+
+
+
+<div class="about">
+  <div class="container-fluid mb-3 mt-3">
+   <div class="p-3">
+     <div class="row">
+       <div class="col-lg-6 col-md-12 col-sm-12 mt-md-2 ">
+         <div class="p-1">
+          <img src="./images/user dir.jpg" class="d-block w-100" alt="">
+         </div>
+       </div>
+
+       <div class="col-lg-6 col-md-12 col-sm-12 mt-md-2 ">
+         <div class="p-1">
+          <h1>About Us </h1><br>
+          <p>Kenyatta University stands as a beacon of excellence in the realm of higher education, with a singular focus on nurturing the brightest minds in the ICT sector.<br>
+             Committed to delivering the best to its students, it empowers future tech leaders through cutting-edge programs, innovative research, and a dedication to fostering technological advancements that shape our world.
+             To learn more about Kenyatta University and its unwavering commitment to excellence in the ICT sector, please visit their comprehensive About Us section by clicking here: </p><br>
+               <a href="https://ict.ku.ac.ke/about-us/">Directorate of Information and Communication Technology</a>
+   
+         </div>
+       </div>
+     </div>
+
+     </div>
+  </div>
+</div>
+
+<div class="featured">
+  <div class="container-fluid mb-3 mt-3">
+    <div class="row">
+      <div class="p-2">
+        <h1>FEATURED CONTENT SITES</h1>
+      
+          <div class="col-lg-4 col-md-12 col-sm-12 mt-md-5">
+            <div class="p-2">
+            <p>For those interested in the overall computer science world</p>
+            <h2>Computer Science</h2><br>
+            <nav>
+              <ul>
+                <li><a href="https://ocw.mit.edu">MIT OpenCourseWare.edu</a></li>
+                <li><a href="https://www.coursera.org">Coursera.org</a></li>
+                <li><a href="https://www.edx.org">edX.org</a></li>
+                <li><a href="https://www.codecademy.com">Codecademy.com</a></li>
+                <li><a href="https://stackoverflow.com">Stack Overflow.com</a></li>
+                <li><a href="https://github.com">GitHub.com</a></li>
+                <li><a href="https://www.geeksforgeeks.org">GeeksforGeeks.org</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+          <div class="col-lg-4 col-md-12 col-sm-12 mt-md-5">
+            <div class="p-2">
+            <p>For those interested in digital marketing skills</p>
+            <h2>Digital Marketing</h2><br>
+            <nav>
+              <ul>
+                <li><a href="https://academy.hubspot.com">HubSpotAcademy.com</a></li>
+                <li><a href="https://grow.google/intl/uk">Google Digital Garage.com</a></li>
+                <li><a href="https://moz.com">Moz.com</a></li>
+                <li><a href="https://neilpatel.com">NeilPatel.com</a></li>
+                <li><a href="https://www.socialmediaexaminer.com">Social Media Examiner.com</a></li>
+                <li><a href="https://contentmarketinginstitute.com">Content Marketing Institute.com</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+          <div class="col-lg-4 col-md-12 col-sm-12 mt-md-5">
+            <div class="p-2">
+            <p>For those interested in the modern information technology scope</p>
+            <h2>Information Technology</h2><br>
+            <nav>
+              <ul>
+                <li><a href="https://techcrunch.com">Tech crunch.com</a></li>
+                <li><a href="https://arstechnica.com">Arstechnica.com</a></li>
+                <li><a href="https://www.techtarget.com">Techtarget.com</a></li>
+                <li><a href="https://www.cio.com">cio.com</a></li>
+                <li><a href="https://www.zdnet.com">Zdnet.com</a></li>
+                <li><a href="https://www.informationweek.com">Informationweek.com</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="message">
+        <div class="container-fluid mb-7 mt-3">
+            <div class="p-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header text-center pb-3 mt-md-3">
+                            <h1>Contact Us</h1>
+                            <p>Unlock your online and digital potential at KU SCC Lab! Explore cutting-edge resources, and don't forget to connect with us on Kenyatta University's social media platforms. Need assistance? Leave us a message. Your digital journey starts here!</p>
+
+                            <div class="social-pages">
+                                <h3>Follow us on our social media platforms</h3>
+
+                                <a href="https://www.facebook.com/kenyattauni" class="social-icon"><i class="bi bi-facebook"></i></a>
+                                <a href="https://www.youtube.com/channel/UCp6hFX0cl4ZhlJBPmNVRmZA?view_as=subscriber" class="social-icon"><i class="bi bi-youtube"></i></a>
+                                <a href="https://twitter.com/KenyattaUni" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+                                <a href="https://www.linkedin.com/school/3094002/" class="social-icon"><i class="bi bi-linkedin"></i></a>
+
+                                <!-- Add more social media icons as needed -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-0">
+                    <div class="col-md-12 p-0 pt-4 pb-4">
+                        <form action="#" class="bg-light p-4 m-auto" method="post">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" required placeholder="Your Full Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" required placeholder="Your Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <textarea rows="5" class="form-control" required placeholder="Type your query here"></textarea>
+                                    </div>
+                                    <button class="btn btn-success btn-lg btn-block mt-3">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+<footer class="bg-dark p-1 text-center">
+   <div class="container-fluid mt-2">
+     <p class="text-white">All Rights Preserved @KU SCC LAB<br> ku.ac.ke </p>
+   </div>
+</footer>
+
+
+</div><br><br>
+
+<!---computer labs button section-->
+
+<div id="Computer_labs" class="Computer_labs">
+
+    <div class="row mb-4"> <!-- Added margin bottom (mb-4) -->
+     <div class="container text-center">
+        <div class="col-12 mt-md-7 text-bg-primary">
+            <h1>Student Computer laboratories</h1>
+            <h3>Feel free and most welcome to visit our student lab centers for your own personal IT expo development</h3>
+            <p>Kenyatta University provides students with readily available computer labs tailored for assignments and online learning in critical disciplines like database management, cybersecurity, data analytics, and programming courses. These well-equipped labs offer students essential resources, fostering an ideal learning environment. Whether for research or hands-on coursework, these facilities are instrumental in enriching the academic journey at Kenyatta University, ensuring students have the tools they need to succeed in their chosen fields of study.</p>
+            <h5 style="color: cyan">Welcome all</h5> <!-- Corrected font-color attribute to style attribute -->
+        </div>
+    </div>
+   </div>
+
+<div class="container">
+  <div class="row justify-content-center mb-4">
+
+       <!-- Display one larger card for large and medium screens -->
+<div class="col-lg-12">
+  <div class="card text-bg-primary mb-3 text-center" style="width: 100%; height: fit-content">
+    <div class="card-header"></div>
+    <div class="card-body">
+      <h5 class="card-title">Student Computer Center</h5><br>
+      <p class="card-text">Kenyatta University provides students with readily available computer labs tailored for assignments and online learning in critical disciplines like database management, cybersecurity, data analytics, and programming courses. These well-equipped labs offer students essential resources, fostering an ideal learning environment. Whether for research or hands-on coursework, these facilities are instrumental in enriching the academic journey at Kenyatta University, ensuring students have the tools they need to succeed in their chosen fields of study.</p>
+
+      <!-- Table-like structure -->
+      <div class="table-responsive">
+        <table class="table table-bordered text-center">
+          <tbody>
+            <tr>
+              <td> Lab no.</td>
+              <td>Capacity (computers)</td>
+ 
+            </tr>
+                        <tr>
+              <td>SCC lab 003</td>
+              <td>112 computers</td>
+ 
+            </tr>
+                        <tr>
+              <td>SCC lab 008</td>
+              <td>80 computers</td>
+ 
+            </tr>
+             <tr>
+              <td>SCC lab 103</td>
+              <td>112 computers</td>
+ 
+            </tr>
+                        <tr>
+              <td>SCC lab 108</td>
+              <td>80 computers</td>
+ 
+            </tr>
+            <tr>
+              <td>SCC lab 203</td>
+              <td>112 computers</td>
+           
+            </tr>
+            <tr>
+              <td>SCC lab 208</td>
+              <td>80 computers</td>
+           
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- End of Table-like structure -->
+    </div>
+  </div>
+</div>
+
+        <!-- Display three cards for large and medium screens -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-ms-none">
+      <div class="card text-bg-primary mb-3 text-center" style="max-width: 18rem;  height: 300px;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">BSSC lab</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+      <!-- Lab Details -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <p class="mb-0">Capacity</p>
+          <h6>30 computers</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">Location</p>
+          <h6>Main Building, Room 101</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">RM Number</p>
+          <h6>101A</h6>
+        </div>
+      </div>
+      <!-- End of Lab Details -->
+
+        </div>
+      </div>
+    </div>
+
+        <!-- Display three cards for large and medium screens -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-ms-none">
+      <div class="card text-bg-primary mb-3 text-center" style="max-width: 18rem; height: 300px;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">M7 lab</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+      <!-- Lab Details -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <p class="mb-0">Capacity</p>
+          <h6>30 computers</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">Location</p>
+          <h6>Main Building, Room 101</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">RM Number</p>
+          <h6>101A</h6>
+        </div>
+      </div>
+      <!-- End of Lab Details -->
+
+        </div>
+      </div>
+    </div>
+
+        <!-- Display three cards for large and medium screens -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-ms-none">
+      <div class="card text-bg-primary mb-3 text-center" style="max-width: 18rem; height: 300px;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">EF02 lab</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+      <!-- Lab Details -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <p class="mb-0">Capacity</p>
+          <h6>30 computers</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">Location</p>
+          <h6>Main Building, Room 101</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">RM Number</p>
+          <h6>101A</h6>
+        </div>
+      </div>
+      <!-- End of Lab Details -->
+
+        </div>
+      </div>
+    </div>
+
+        <!-- Display three cards for large and medium screens -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-ms-none">
+      <div class="card text-bg-primary mb-3 text-center" style="max-width: 18rem; height: 300px;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">GIS (EF03) lab</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+      <!-- Lab Details -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <p class="mb-0">Capacity</p>
+          <h6>30 computers</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">Location</p>
+          <h6>Main Building, Room 101</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">RM Number</p>
+          <h6>101A</h6>
+        </div>
+      </div>
+      <!-- End of Lab Details -->
+
+        </div>
+      </div>
+    </div>
+
+        <!-- Display three cards for large and medium screens -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-ms-none">
+      <div class="card text-bg-primary mb-3 text-center" style="max-width: 18rem; height: 300px;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">FAZ 20 (Arts) lab</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+      <!-- Lab Details -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <p class="mb-0">Capacity</p>
+          <h6>30 computers</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">Location</p>
+          <h6>Main Building, Room 101</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">RM Number</p>
+          <h6>101A</h6>
+        </div>
+      </div>
+      <!-- End of Lab Details -->
+
+        </div>
+      </div>
+    </div>
+
+        <!-- Display three cards for large and medium screens -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-ms-none">
+      <div class="card text-bg-primary mb-3 text-center" style="max-width: 18rem; height: 300px;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">E-learning lab5 (AVU)</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+      <!-- Lab Details -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <p class="mb-0">Capacity</p>
+          <h6>30 computers</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">Location</p>
+          <h6>Main Building, Room 101</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">RM Number</p>
+          <h6>101A</h6>
+        </div>
+      </div>
+      <!-- End of Lab Details -->
+
+        </div>
+      </div>
+    </div>
+
+        <!-- Display three cards for large and medium screens -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-ms-none">
+      <div class="card text-bg-primary mb-3 text-center" style="max-width: 18rem; height: 300px;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">Engineering lab</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+      <!-- Lab Details -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <p class="mb-0">Capacity</p>
+          <h6>30 computers</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">Location</p>
+          <h6>Main Building, Room 101</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">RM Number</p>
+          <h6>101A</h6>
+        </div>
+      </div>
+      <!-- End of Lab Details -->
+
+        </div>
+      </div>
+    </div>
+
+            <!-- Display three cards for large and medium screens -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-ms-none">
+      <div class="card text-bg-primary mb-3 text-center" style="max-width: 18rem; height: 300px;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">Engineering lab</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+   
+      <!-- Lab Details -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <p class="mb-0">Capacity</p>
+          <h6>30 computers</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">Location</p>
+          <h6>Main Building, Room 101</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">RM Number</p>
+          <h6>101A</h6>
+        </div>
+      </div>
+      <!-- End of Lab Details -->
+
+        </div>
+      </div>
+    </div>
+
+            <!-- Display three cards for large and medium screens -->
+    <div class="col-lg-4 col-md-4 col-sm-6 col-12 d-ms-none">
+      <div class="card text-bg-primary mb-3 text-center" style="max-width: 18rem; height: 300px;">
+        <div class="card-header"></div>
+        <div class="card-body">
+          <h4 class="card-title">Engineering lab</h4>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+      <!-- Lab Details -->
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <p class="mb-0">Capacity</p>
+          <h6>30 computers</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">Location</p>
+          <h6>Main Building, Room 101</h6>
+        </div>
+        <div class="col-md-4">
+          <p class="mb-0">RM Number</p>
+          <h6>101A</h6>
+        </div>
+      </div>
+      <!-- End of Lab Details -->
+
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+    </div>
+
+    <div class="row mb-4"> <!-- Added margin bottom (mb-4) -->
+        <div class="container text-center">
+        <div class="col-12 mt-md-7 text-bg-danger">
+            <h1 class="tittle">Student Computer laboratories</h1>
+            <h3>Feel free and most welcome to visit our student lab centers for your own personal IT expo development</h3>
+            <p>Kenyatta University provides students with readily available computer labs tailored for assignments and online learning in critical disciplines like database management, cybersecurity, data analytics, and programming courses. These well-equipped labs offer students essential resources, fostering an ideal learning environment. Whether for research or hands-on coursework, these facilities are instrumental in enriching the academic journey at Kenyatta University, ensuring students have the tools they need to succeed in their chosen fields of study.</p>
+            <h5 style="color: cyan">Welcome all</h5> <!-- Corrected font-color attribute to style attribute -->
+         </div>
+        </div>
+    </div>
+
+    <div class="row mb-4"> <!-- Added margin bottom (mb-4) -->
+        <div class="container text-center">
+        <div class="col-12 mt-md-7 " style="background-color: blueviolet;">
+            <h1 class="tittle">Student Computer laboratories</h1>
+            <h3>Feel free and most welcome to visit our student lab centers for your own personal IT expo development</h3>
+            <p>Kenyatta University provides students with readily available computer labs tailored for assignments and online learning in critical disciplines like database management, cybersecurity, data analytics, and programming courses. These well-equipped labs offer students essential resources, fostering an ideal learning environment. Whether for research or hands-on coursework, these facilities are instrumental in enriching the academic journey at Kenyatta University, ensuring students have the tools they need to succeed in their chosen fields of study.</p>
+            <h5 style="color: cyan">Welcome all</h5> <!-- Corrected font-color attribute to style attribute -->
+         </div>
+        </div>
+    </div>
+
+      </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">  
+
+
+// JavaScript code to handle button clicks and content display
+
+// Get references to the buttons and content elements
+const home = document.getElementById('home');
+const services = document.getElementById('services');
+const computer_labs = document.getElementById('computer_labs');
+
+home.addEventListener('click', () => {
+    // Hide all content except for content1
+    Services.style.display = 'none';
+    Computer_labs.style.display = 'none';
+
+    // Toggle visibility of content1
+    Home.style.display = (Home.style.display === 'none' || Home.style.display === '') ? 'block' : 'none';
+
+    // Adjust button styles to indicate the selected button
+    home.style.fontWeight = (Home.style.display === 'block') ? 'bold' : 'normal';
+    services.style.fontWeight = 'normal';
+    computer_labs.style.fontWeight = 'normal';
+});
+
+
+
+  </script>
+
+
+</body>
+</html>
